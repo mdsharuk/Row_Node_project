@@ -18,4 +18,16 @@ app.config = {
 };
 
 // Create server
-app.createServer = () => {};
+app.createServer = () => {
+  const server = http.createServer(app.handleReqRes);
+  server.listen(app.config.port, () => {
+    console.log(`Server is running on port ${app.config.port}`);
+  });
+};
+// hendle requests
+app.handleReqRes = (req, res) => {
+  res.end("Hello programer! This is a simple uptime monitoring API.");
+};
+
+// Start the server
+app.createServer();
