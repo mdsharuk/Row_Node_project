@@ -1,19 +1,24 @@
-# Row Node Project
+# Uptime Monitoring API (Raw Node.js)
 
-This is a Node.js project built as part of the **Row Node Project** repository.
+A lightweight uptime monitoring REST API built using **pure Node.js** — no external frameworks like Express.
 
-## 🚀 Features
+## 🌐 Features
 
-- Express.js server setup
-- RESTful API endpoints
-- Environment variable configuration
-- Structured project organization
+- Add and manage websites to monitor
+- Periodic checks to determine if sites are up or down
+- Status logging and console reporting
+- Modular design using built-in Node.js modules (like `http`, `fs`, `url`, etc.)
 
-## 📦 Installation
+## ⚙️ Tech Used
 
-Clone the repository and install dependencies:
+- Node.js (No frameworks)
+- File-based storage (using `fs`)
+- Native modules: `http`, `url`, `path`, `fs`, etc.
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/mdsharuk/Row_Node_project.git
 cd Row_Node_project
-npm install
